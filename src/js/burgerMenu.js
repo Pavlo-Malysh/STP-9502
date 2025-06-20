@@ -1,11 +1,32 @@
-const openBtnEl = document.querySelector('[data-action="open"]');
-const closeBtnEl = document.querySelector('[data-action="close"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+import { refs } from "./refs";
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
+
+refs.openBtnEl.addEventListener('click', e => {
+  refs.burgerMenuEl.dataset.visible = 'open';
 });
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
+refs.closeBtnEl.addEventListener('click', e => {
+  refs.burgerMenuEl.dataset.visible = 'close';
 });
+
+
+
+refs.mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // Щоб вручну контролювати скрол
+
+    const targetId = link.getAttribute('href').slice(1); // Без "#"
+    const targetEl = document.getElementById(targetId);
+
+    if (!targetEl) return;
+
+    // Закрити мобільне меню
+    refs.burgerMenuEl.dataset.visible = 'close';
+
+    // Трохи затримати скрол, поки меню зникає (анімація)
+    setTimeout(() => {
+      targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300); // 300мс = час transition для opacity/visibility
+  });
+});
+
