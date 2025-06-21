@@ -9,7 +9,6 @@
   gap: 16px;
   flex-direction: column;
   align-items: center;
-  /* padding-top: 12px; */
   margin-bottom: 52px;
 
   position: relative;
@@ -45,10 +44,6 @@
   line-height: 1;
 }
 
-.footer-text {
-  /* padding-bottom: 20px; */
-}
-
 
 @media only screen and (min-width: 1200px) {
   .footer {
@@ -57,7 +52,6 @@
   }
 
   .footer-nav-list {
-    /* padding-top: 40px; */
     flex-direction: row;
     gap: 153px;
     margin-bottom: 40px;
@@ -86,8 +80,4 @@
     margin-bottom: 41px;
   }
 
-  .footer-text {
-    /* padding-bottom: 66px; */
-    /* max-width: 370px; */
-  }
 }
