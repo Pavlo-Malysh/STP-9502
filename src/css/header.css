@@ -28,6 +28,7 @@ html {
   transform: translateX(-50%);
   width: 100%;
   background-color: #7f8aff;
+  z-index: 1000;
 }
 
 .header .container {
