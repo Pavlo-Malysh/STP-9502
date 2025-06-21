@@ -1,0 +1,231 @@
+.why-play {
+    background-color: #979eff;
+}
+.bg-img {
+  background-image: url('/img/mobile-bg-why-play.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 273px;
+  background-color: #fff;
+}
+
+@media (min-resolution: 192dpi) and (max-width: 1199px) {
+  .bg-img {
+    background-image: url(/img/mobile-bg-why-play@2x.webp);
+  }
+}
+
+.wrap-content__why-play {
+  position: relative;
+  padding: 8px 0;
+}
+
+.title__why-play {
+  font-size: 20px;
+  margin-bottom: 21px;
+  margin-right: 14px;
+  text-align: right; 
+  color: #979eff;
+  text-shadow: 
+  6px -6px 6px #fff,
+  -6px 6px 6px #fff,
+  9px -9px 9px #fff,
+  -9px 9px 9px #fff,
+  12px -12px 12px #fff,
+  -12px 12px 12px #fff;
+}
+
+.list__why-play {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: item-counter;
+  margin: 0;
+}
+
+.item__why-play {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  height: 36px;
+  padding: 8px 4px 8px 3px;
+  border: 0.50px solid #fff;
+  border-radius: 10px;  
+}
+.item__why-play:not(:last-child){
+  margin-bottom: 8px;
+}
+
+.item__why-play::before {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;  
+  z-index: 1;
+}
+
+
+.item__why-play.purple::before {
+  background-color: #D553F2;
+}
+.item__why-play.blue::before {
+  background-color: #401FFA; 
+}
+.item__why-play.blue-light::before {
+  background-color: #02BEF2; 
+}
+.item__why-play.violet::before {
+  background-color: #916DF5; 
+}
+.item__why-play.green::before {
+  background-color: #34A853; 
+}
+
+.item__why-play::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background-color: white;
+  z-index: 2;
+}
+
+
+.text__why-play { 
+  font-size: 11px;
+}
+
+.text__why-play::before {
+  counter-increment: item-counter;
+  content: counter(item-counter);
+  position: absolute;
+  font-size: 11px;
+  right: -4px;
+  top: 17px;
+  transform: translateY(-50%);
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.purple .text__why-play::before {
+  color: #D553F2;
+}
+.blue .text__why-play::before {
+  color: #401FFA;
+}
+.blue-light .text__why-play::before {
+  color: #02BEF2;
+}
+.violet .text__why-play::before {
+  color: #916DF5;
+}
+.green .text__why-play::before {
+  color: #34A853;
+}
+
+@media only screen and (min-width: 1200px) {
+
+.why-play {
+    padding-top: 20px;
+}
+.bg-img {
+display: none;
+}
+
+.why-play .container {
+background-image: url('/img/bg-why-play.webp');
+background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+height: 600px;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1200px) {
+.why-play .container {
+    background-image: url(/img/bg-why-play@2x.webp);
+}
+}
+
+.wrap-content__why-play {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.title__why-play {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 48px;
+  text-shadow: none;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.list__why-play {
+  width: 940px;
+}
+.item__why-play {
+  align-items: flex-start;
+  border-radius: 0 10px 10px 0;
+  height: 86px;
+  background: #aeb2ff;
+  border: none;
+  padding: 16px 0;
+}
+
+.text__why-play {
+  font-size: 24px;
+  /* color: #545454; */
+}
+.hyphenation {
+  display: block;
+}
+.item__why-play::before {
+  right: 0; 
+  width: 80px;
+  height: 80px;
+}
+
+.item__why-play::after {
+  right: 24px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.text__why-play::before {
+  font-size: 20px;
+  right: 19px;
+  top: 43px;
+}
+.list__why-play .item__why-play.green {
+  width: 100%;
+}
+.list__why-play .item__why-play.violet {
+  width: 90%;
+}
+.list__why-play .item__why-play.blue-light {
+  width: 80%;
+}
+.list__why-play .item__why-play.blue {
+  width: 70%;
+}
+.list__why-play .item__why-play.purple {
+  width: 60%;
+}
+.item__why-play:not(:last-child){
+  margin-bottom: 20px;
+}
+
+
+}
