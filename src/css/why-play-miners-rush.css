@@ -1,5 +1,6 @@
 .why-play {
     background-color: #979eff;
+    margin-bottom: 4px;
 }
 
 .why-play .container {
@@ -31,13 +32,23 @@
   margin-bottom: 21px;
   text-align: right; 
   color: #979eff;
-  text-shadow: 
-  6px -6px 6px #fff,
-  -6px 6px 6px #fff,
-  9px -9px 9px #fff,
-  -9px 9px 9px #fff,
-  12px -12px 12px #fff,
-  -12px 12px 12px #fff;
+  text-shadow:
+  -2px -2px 0 #ffffff,
+  0 -2px 0 #ffffff,
+  2px -2px 0 #ffffff,
+  -2px 0 0 #ffffff,
+  2px 0 0 #ffffff,
+  -2px 2px 0 #ffffff,
+  0 2px 0 #ffffff,
+  2px 2px 0 #ffffff,
+  -1px -2px 0 #ffffff,
+  1px -2px 0 #ffffff,
+  -1px 2px 0 #ffffff,
+  1px 2px 0 #ffffff,
+  -2px -1px 0 #ffffff,
+  2px -1px 0 #ffffff,
+  -2px 1px 0 #ffffff,
+  2px 1px 0 #ffffff;
 }
 
 .list__why-play {
@@ -141,6 +152,10 @@
 
 @media only screen and (min-width: 1200px) {
 
+.why-play {
+  margin-bottom: 12px;
+}
+
 .bg-img {
 display: none;
 }
@@ -183,6 +198,7 @@ height: 600px;
 .item__why-play {
   align-items: flex-start;
   border-radius: 0 10px 10px 0;
+  border: none;
   height: 86px;
   background: #aeb2ff;
   border: none;
