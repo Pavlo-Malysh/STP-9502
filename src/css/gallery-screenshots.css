@@ -76,43 +76,43 @@ z-index: 10;
 }
 
 .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-    transition: all 0.3s ease;
-  }
-  
-  /* Активна кулька */
-  .bullet-distance-0 {
-    transform: scale(1.3);
-    background-color: #7f8aff;
-    opacity: 1;
-  }
-  
-  /* Чим далі — тим менше */
-  .bullet-distance-1 {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-  .bullet-distance-2 {
-    transform: scale(0.95);
-    opacity: 0.6;
-  }
-  .bullet-distance-3 {
-    transform: scale(0.8);
-    opacity: 0.45;
-  }
-  .bullet-distance-4 {
-    transform: scale(0.7);
-    opacity: 0.3;
-  }
-  .bullet-distance-5 {
-    transform: scale(0.6);
-    opacity: 0.2;
-  }
-  
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+/* Активна кулька */
+.bullet-distance-0 {
+  transform: scale(1.3);
+  background-color: #7f8aff;
+  opacity: 1;
+}
+
+/* Чим далі — тим менше */
+.bullet-distance-1 {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.bullet-distance-2 {
+  transform: scale(0.95);
+  opacity: 0.6;
+}
+.bullet-distance-3 {
+  transform: scale(0.8);
+  opacity: 0.45;
+}
+.bullet-distance-4 {
+  transform: scale(0.7);
+  opacity: 0.3;
+}
+.bullet-distance-5 {
+  transform: scale(0.6);
+  opacity: 0.2;
+}
+
 
 
 .swiper .swiper-button-next,
@@ -128,25 +128,35 @@ display: none;
 }
 
 /* Десктопна версія */
+
 @media (min-width: 1200px) {
+.gallery {
+background-color:  #979eff;
+padding-top: 19px;
+padding-bottom: 79px;
+margin-bottom: 12px;
+}
+
 .title__gallery {
 font-size: 48px;
-margin-bottom: 67px;
+margin-bottom: 50px;
 text-align: center; 
 color: transparent;
--webkit-text-stroke: 4px #fff;
+-webkit-text-stroke: 2px #fff;
 text-shadow:none;
 }
 .text__gallery {
 font-size: 16px;
+line-height: 1.25;
+margin-bottom: 0;
 }
 
 .item__gallery.swiper-slide {
-height: 525px;
+height: 575px;
 }
 
 .list__gallery {
-margin-bottom: 45px;
+margin-bottom: 22px;
 }
 
 .gallery .swiper {
