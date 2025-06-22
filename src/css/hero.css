@@ -1,0 +1,229 @@
+.hero {
+    background-color: #7f8aff;
+    margin-bottom: 4px;
+}
+
+
+.hero__bg-image {
+    background-image: url('/img/hero-mobile-bg-image.webp');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 200px;
+    margin: 0 auto 19px;
+  }
+  
+  @media (min-resolution: 192dpi) and (max-width: 1199px) {
+    .hero__bg-image {
+      background-image: url(/img/hero-mobile-bg-image@2x.webp);
+    }
+  }
+ 
+  .hero .container {
+    position: relative;
+  }
+
+  .bg__coffer{
+    background-image: url('/img/mobile-coffer.webp');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 120px;
+    right: 16px;
+  }
+  
+  @media (min-resolution: 192dpi) and (max-width: 1199px) {
+    .bg__coffer{
+      background-image: url(/img/mobile-coffer@2x.webp);
+    }
+  }
+
+  .wrap__hero-content {
+    padding-bottom: 8px;
+  }
+  .title__hero{
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-align: center; 
+    color: #979eff;
+    text-shadow:
+    -2px -2px 0 #ffffff,
+    0 -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 0 0 #ffffff,
+    2px 0 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    0 2px 0 #ffffff,
+    2px 2px 0 #ffffff,
+    -1px -2px 0 #ffffff,
+    1px -2px 0 #ffffff,
+    -1px 2px 0 #ffffff,
+    1px 2px 0 #ffffff,
+    -2px -1px 0 #ffffff,
+    2px -1px 0 #ffffff,
+    -2px 1px 0 #ffffff,
+    2px 1px 0 #ffffff;
+  }
+
+  .title__hero-content {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .text__hero {
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+  .link__hero-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #9c9c9c;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #5120e3;
+    padding: 14px 17px;
+    height: 48px;
+  }
+
+.icon__google-play {
+    width: 24px;
+    height: 32px;
+}
+
+.wrap__hero-btn {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+.hero {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  margin-bottom: 12px;
+}
+.hero__bg-image {
+    display: none;
+}
+
+.hero .container {
+    background-image: url('/img/hero-bg-image.webp');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 595px;
+    }
+    
+    @media (min-resolution: 192dpi) and (min-width: 1200px) {
+.hero .container {
+    background-image: url(/img/hero-bg-image@2x.webp);
+  }
+}
+
+.bg__coffer{
+    background-image: url('/img/coffer.webp');
+    width: 197px;
+    height: 197px;
+    top: 393px;
+    left: 303px;
+  }
+  
+  @media (min-resolution: 192dpi) and (min-width: 1200px) {
+.bg__coffer{
+    background-image: url(/img/coffer@2x.webp);
+}
+}
+
+.title__hero{
+    text-align: left;
+    text-shadow:none;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 4px #fff;
+    width: 570px;
+
+  }
+.wrap__hero-content {
+    position: absolute;
+    top: 63px;
+    right: 63px;
+    width: 622px;
+  }
+
+
+  .title__hero-content {
+    font-size: 32px;
+    margin-bottom: 27px;
+    width: 622px;
+  }
+
+  .text__hero {
+    font-size: 20px;
+    margin-bottom: 40px;
+    width: 620px;
+  }
+  .link__hero-btn {    
+    font-size: 24px;
+    gap: 21px;
+    padding: 14px 17px;
+    width: 380px;
+    height: 48px;
+    margin-bottom: 36px;
+
+    transition: color, background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link__hero-btn:hover {
+    background-color: #5120e3;
+    color: #fff;
+  }
+
+
+.wrap__hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+  .hero__btn-play-now {
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #916df5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    height: 45px;
+    border: none;
+
+    transition: color, background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero__btn-play-now:hover {
+    background-color: #fff;
+    color: #916df5;
+  }
+
+  .hero__watch-gameplay {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    height: 45px;
+    background-color: transparent;  
+    
+    transition: color, background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero__watch-gameplay:hover {
+    background-color: #fff;
+    color: #916df5;
+  }
+}
