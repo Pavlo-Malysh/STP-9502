@@ -1,0 +1,210 @@
+.level-section {
+    background-color: #979eff;
+    margin-bottom: 4px;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg__level-img {
+    background-image: url('/img/mobile-bg-level.webp');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 220px;
+    background-color: #fff;
+}
+@media (min-resolution: 192dpi) and (max-width: 1199px) {
+.bg__level-img {
+    background-image: url(/img/mobile-bg-level@2x.webp);
+}
+}
+
+.bg__content {
+    background-image: url('/img/mobile-bg-level-content.webp');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    width: 320px;
+    height: 404px;
+    background-color: #fff;
+  }
+
+ 
+  @media (min-resolution: 192dpi) and (max-width: 1199px) {
+    .bg__content {
+      background-image: url(/img/mobile-bg-level-content@2x.webp);
+    }
+  }
+
+.bg__level-smile {
+    background-image: url('/img/bg-level-smile.webp');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 164px;
+    height: 136px;
+}
+
+@media (min-resolution: 192dpi) and (max-width: 1199px) {
+    .bg__level-smile {
+      background-image: url(/img/bg-level-smile@2x.webp);
+    }
+  }
+
+
+.title__level {
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.text__level {
+    font-size: 11px;
+    padding-left: 32px;
+    padding-right: 16px;
+    margin-bottom: 15px;
+}
+
+.text__level-wifi {
+    font-size: 12px;
+    margin-bottom: 33px;
+}
+
+.wrap__level-content {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap__link-wifi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon__wifi {
+    width: 44Px;
+    height: 39px;
+    fill: #fff;
+    margin-bottom: 12px;
+}
+
+  .link__hero-btn.level {
+    width: 100px;
+    height: 28px;
+    padding: 0 5px;
+    font-size: 12px;
+    gap: 4px;
+    margin-bottom: 12px;
+    border: none;
+  }
+
+  .icon__google-play.level {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .level-section {
+        background-color: #dddbff;
+        margin-bottom: 12px;
+    }
+
+    .bg__level-img {
+        display: none;
+    }
+    .level-section .container {
+        background-image: url('/img/bg-level.webp');
+        background-size: contain;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        padding-top: 15px;
+        padding: 0 24px;
+        height: 600px;
+        background-color: transparent;
+        position: relative;
+      }
+    
+     
+      @media (min-resolution: 192dpi) and (max-width: 1199px) {
+        .level-section .container{
+          background-image: url(/img/bg-level@2x.webp);
+        }
+      }
+      .level-section .container .bg__content {
+        background-image: url('/img/bg-level-content.webp');
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-top: 32px;
+        width: 796px;
+        height: 383px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        right: 24px;
+      }    
+     
+      @media (min-resolution: 192dpi) and (max-width: 1199px) {
+        .level-section .container .bg__content {
+          background-image: url(/img/bg-level-content@2x.webp);
+        }
+      }
+
+      .wrap__level-content {        
+        flex-direction: row;
+        width: 327px;
+        gap: 63px;
+        margin-left: 396px;
+    }
+
+      .title__level {
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.06em;
+        margin-bottom: 24px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 712px;
+        margin-left: auto;
+      }   
+    .text__level {
+        font-size: 16px;
+        width: 564px;
+        padding: 0;
+        margin-bottom: 51px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .text__level::after {
+        position: absolute;
+        content: '';
+        width: 475px;
+        border: 2px solid #fff;   
+        bottom: -24px;
+        right: 118px;  
+    }
+    
+    .text__level-wifi {
+        font-size: 12px;
+        margin-bottom: 33px;       
+    }
+
+    .link__hero-btn.level:hover {
+        background-color: #5120e3;
+        color: #fff;
+      }
+
+
+  }
+
+
