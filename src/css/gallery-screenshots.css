@@ -65,7 +65,6 @@ transition: transform 0.3s ease;
 }
 /* Основний контейнер пагінації */
 .swiper-pagination {
-/* position: relative; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -112,9 +111,6 @@ z-index: 10;
   transform: scale(0.6);
   opacity: 0.2;
 }
-
-
-
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
 display: none;
@@ -165,9 +161,6 @@ justify-content: center;
 align-items: center;
 margin-left: 15px;
 
-/* padding: 0 60px;
-max-width: 1200px;
-margin: 0 auto; */
 }
 
 .swiper-slide {
