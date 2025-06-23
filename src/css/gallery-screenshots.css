@@ -1,13 +1,12 @@
 .gallery {
 background-color:  #979eff;
 padding-top: 12px;
-padding-bottom: 12px;
 margin-bottom: 4px;
 }
 
 .title__gallery {
 font-size: 20px;
-margin-bottom: 24px;
+margin-bottom: 10px;
 text-align: center; 
 color: #979eff;
 text-shadow:
@@ -32,11 +31,15 @@ text-shadow:
 .text__gallery {
 font-size: 12px;
 text-align: center;
-margin-bottom: 4px;
-height: 50px;
+margin-bottom: 8px;
+height: 26px;
 }
 .gallery-img {
+border-radius: 10px;
 margin: 0 auto;
+box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+width: 220px;
+height: 300px;
 }
 
 .list__gallery {
@@ -44,8 +47,9 @@ margin-bottom: 20px;
 }
 
 .item__gallery.swiper-slide {
-width: 135px;
-height: 252px;
+width: 220px;
+height: 347px;
+border-radius: 10px;
 }
 
 .swiper {
@@ -149,6 +153,7 @@ text-shadow:none;
 font-size: 16px;
 line-height: 1.25;
 margin-bottom: 0;
+height: 40px;
 }
 
 .item__gallery.swiper-slide {
@@ -156,7 +161,7 @@ height: 575px;
 }
 
 .list__gallery {
-margin-bottom: 22px;
+margin-bottom: 35px;
 }
 
 .gallery .swiper {
@@ -165,15 +170,27 @@ justify-content: center;
 align-items: center;
 margin-left: 15px;
 
-/* padding: 0 60px;
-max-width: 1200px;
-margin: 0 auto; */
 }
 
 .swiper-slide {
-flex: 0 0 calc((100% - 60px) / 3); /* Розділити на 3 слайди з 30px між ними */
+flex: 0 0 calc((100% - 60px) / 3);
 max-width: 360px;
 transition: transform 0.3s ease;
+}
+
+/* Базовий стан — зображення трохи зменшене */
+.gallery-img{
+  transform: scale(0.95) translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 324px;
+  height: 520px;
+}
+
+/* Активна картка — піднімається rтільки зображення */
+.swiper-slide-active .gallery-img {
+  transform: scale(1.02) translateY(0);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 .swiper-slide-active {
@@ -193,7 +210,7 @@ transform: scaleX(-1);
 .swiper .swiper-button-prev {
 display: block;
 position: absolute;
-left: 354px;
+left: 350px;
 }
 .swiper-button-prev .icon-arrow-prev,
 .swiper-button-next .icon-arrow-next {
@@ -211,6 +228,5 @@ transition: fill 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 .swiper-button-prev:active .icon-arrow-prev {
   fill:  #5120e3;
 }
-
 
 }
