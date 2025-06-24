@@ -1,14 +1,14 @@
-.privacy-theme {
+.bg-theme {
   background-color: #7f8aff;
 }
 
-.privacy-header {
+.condition-header {
   padding-top: 20px;
   padding-bottom: 12px;
 }
 
 .privacy-section {
-  padding-bottom: 13px;
+  padding-bottom: 41px;
 }
 
 .back-link {
@@ -41,7 +41,7 @@
 
 .privacy-list-item {
   counter-increment: list-counter;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .privacy-list-item::before {
@@ -59,18 +59,18 @@
 .privacy-text-item {
   font-size: 12px;
   line-height: 1.25;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .privacy-sublist .privacy-sublist-item::before {
   position: absolute;
   content: '';
-  width: 3.5px;
-  height: 3.5px;
+  width: 4px;
+  height: 4px;
   display: inline-block;
   background-color: #fff;
   vertical-align: middle;
-  left: -11px;
+  left: -8px;
   top: 7px;
   border-radius: 0.3px;
 }
@@ -78,21 +78,14 @@
 .privacy-sublist-item {
   font-size: 12px;
   line-height: 1.25;
-  margin-left: 21px;
+  margin-left: 8px;
   position: relative;
-}
-
-.privacy-subtitle-info-text {
-  margin-bottom: 8px;
 }
 
 .privacy-sublist-block {
   margin-bottom: 8px;
 }
 
-.privacy-list-item:last-child .privacy-subtitle {
-  margin-bottom: 12px;
-}
 
 .privacy-list-item:last-child {
   margin-bottom: 0;
@@ -103,7 +96,7 @@
     font-size: 22px;
   }
 
-  .privacy-header {
+  .condition-header {
     padding-top: 50px;
     padding-bottom: 28px;
   }
@@ -119,7 +112,7 @@
   .privacy-text {
     font-size: 20px;
     max-width: 1146px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .privacy-subtitle {
@@ -128,7 +121,7 @@
 
   .privacy-list-item {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
 
   .privacy-list-item::before {
@@ -137,31 +130,31 @@
 
   .privacy-text-item {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   .privacy-sublist-item {
     font-size: 20px;
-    margin-left: 139px;
+    margin-left: 114px;
   }
 
   .privacy-sublist .privacy-sublist-item::before {
     position: absolute;
     content: '';
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     display: inline-block;
-    left: -13px;
+    left: -16px;
     top: 12px;
     border-radius: 0.3px;
   }
 
   .privacy-sublist-block {
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
 
   .privacy-section {
-    padding-bottom: 26px;
+    padding-bottom: 77px;
   }
 
 }

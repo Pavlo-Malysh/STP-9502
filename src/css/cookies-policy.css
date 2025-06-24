@@ -1,56 +1,61 @@
-.terms-conditions-section {
-  padding-bottom: 25px;
+.cookies-policy-section {
+  padding-bottom: 60px;
 }
 
-.terms-conditions-title,
-.terms-conditions-subtitle-info {
+.cookies-policy-title,
+.cookies-policy-subtitle-info {
   font-size: 16px;
   margin-bottom: 12px;
 }
 
-.terms-conditions-text {
+.cookies-policy-text {
   line-height: 1.25;
   margin-bottom: 4px;
 }
 
-.terms-conditions-list {
+.cookies-policy-text span {
+  display: inline-block;
+}
+
+
+.cookies-policy-list {
   font-size: 16px;
   counter-reset: list-counter;
 }
 
-.terms-conditions-list-item {
+.cookies-policy-list-item {
   counter-increment: list-counter;
   margin-bottom: 4px;
 }
 
-.terms-conditions-list-item::before {
+.cookies-policy-list-item::before {
   content: counter(list-counter) ".";
   margin-left: 6px;
   margin-right: 2px;
 }
 
-.terms-conditions-subtitle {
+.cookies-policy-subtitle {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 4px;
 }
 
-.terms-conditions-text-item {
+.cookies-policy-text-item {
   font-size: 12px;
   line-height: 1.25;
   margin-bottom: 4px;
 }
 
-.terms-conditions-text-item span {
+.cookies-policy-text-item span {
   display: inline-block;
   margin-bottom: 4px;
 }
 
-.terms-conditions-sublist {
+.cookies-policy-sublist {
   margin-bottom: 4px;
 }
 
-.terms-conditions-sublist .terms-conditions-sublist-item::before {
+.cookies-policy-sublist .cookies-policy-sublist-item::before {
   position: absolute;
   content: '';
   width: 4px;
@@ -58,98 +63,98 @@
   display: inline-block;
   background-color: #fff;
   vertical-align: middle;
-  left: -10px;
+  left: -12px;
   top: 7px;
   border-radius: 0.3px;
 }
 
-.terms-conditions-sublist-item {
+.cookies-policy-sublist-item {
   font-size: 12px;
   line-height: 1.25;
-  margin-left: 10px;
+  margin-left: 12px;
   position: relative;
 }
 
-.terms-conditions-sublist-link,
-.privacy-policy-page-link,
-.privacy-sublist-link {
+.cookies-policy-sublist-item span {
+  display: block;
+}
+
+.cookies-policy-sublist-link,
+.cookies-policy-text a {
   text-decoration: underline;
 }
 
-.terms-conditions-sublist-block {
+
+.cookies-policy-sublist-block {
   margin-bottom: 8px;
 }
 
-.terms-conditions-list-item:last-child {
+.cookies-policy-list-item:last-child {
   margin-bottom: 0;
 }
 
-.terms-conditions-text-item.add-text-item {
+.cookies-policy-text-item.add-text-item {
   display: none;
 }
 
 @media only screen and (min-width: 1200px) {
 
-  .terms-conditions-title {
+  .cookies-policy-title {
     font-size: 44px;
   }
 
-  .terms-conditions-subtitle-info {
+  .cookies-policy-subtitle-info {
     font-size: 28px;
   }
 
-  .terms-conditions-text {
+  .cookies-policy-text {
     font-size: 20px;
     margin-bottom: 4px;
   }
 
-  .terms-conditions-subtitle {
+  .cookies-policy-subtitle {
     font-size: 32px;
   }
 
-  .terms-conditions-list-item {
+  .cookies-policy-list-item {
     font-size: 32px;
     margin-bottom: 4px;
   }
 
-  .terms-conditions-list-item::before {
+  .cookies-policy-list-item::before {
     margin-left: 11px;
   }
 
-  .terms-conditions-text-item {
+  .cookies-policy-text-item {
     font-size: 20px;
     margin-bottom: 4px;
   }
 
-  .terms-conditions-text-item span {
+  .cookies-policy-text-item span {
     margin-bottom: 0;
   }
 
-  .terms-conditions-sublist-item {
+  .cookies-policy-sublist-item {
     font-size: 20px;
-    margin-left: 110px;
+    margin-left: 111px;
   }
 
-  .terms-conditions-sublist .terms-conditions-sublist-item::before {
+  .cookies-policy-sublist .cookies-policy-sublist-item::before {
     position: absolute;
     content: '';
     width: 5px;
     height: 5px;
     display: inline-block;
-    left: -12px;
+    left: -13px;
     top: 12px;
     border-radius: 0.3px;
   }
 
-  .terms-conditions-sublist-block {
-    margin-bottom: 20px;
+  .cookies-policy-section {
+    padding-bottom: 69px;
   }
 
-  .terms-conditions-section {
-    padding-bottom: 58px;
-  }
-
-  .terms-conditions-text-item.add-text-item {
+  .cookies-policy-text-item.add-text-item {
     display: inline-block;
   }
 }
