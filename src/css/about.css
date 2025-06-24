@@ -98,7 +98,7 @@
   .about-container {
     background-image: url('/img/about-miners-desk.webp');
     background-size: contain;
-    background-position: right;
+    background-position: calc(100% - 24px) bottom;
     position: relative;
   }
 
