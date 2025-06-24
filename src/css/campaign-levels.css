@@ -1,0 +1,134 @@
+.levels {
+  background-color: #979EFF;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  margin-bottom: 4px;
+}
+
+.levels-title {
+  font-size: 20px;
+  color: #979EFF;
+  text-align: right;
+  text-shadow:
+    -2px -2px 0 #ffffff,
+    0 -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 0 0 #ffffff,
+    2px 0 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    0 2px 0 #ffffff,
+    2px 2px 0 #ffffff,
+    -1px -2px 0 #ffffff,
+    1px -2px 0 #ffffff,
+    -1px 2px 0 #ffffff,
+    1px 2px 0 #ffffff,
+    -2px -1px 0 #ffffff,
+    2px -1px 0 #ffffff,
+    -2px 1px 0 #ffffff,
+    2px 1px 0 #ffffff;
+}
+
+.levels-image {
+  width: 163px;
+  height: 166px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+.levels-subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.levels-text {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.levels-list {}
+
+.levels-list-item {
+  position: relative;
+  font-size: 11px;
+  margin-left: 16px;
+}
+
+.levels-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.levels-list .levels-list-item::before {
+  content: '';
+  background-color: #fff;
+  border-radius: 1px;
+  width: 3px;
+  height: 3px;
+  top: 5px;
+  left: -6px;
+  position: absolute;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) {
+  .levels {
+    padding-top: 18px;
+    padding-bottom: 68px;
+    margin-bottom: 12px;
+  }
+
+  .levels-title {
+    font-size: 48px;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: none;
+    margin-bottom: 14px;
+  }
+
+  .levels-subtitle {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  .levels-text {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  .levels-list-item {
+    font-size: 20px;
+    margin-left: 105px;
+  }
+
+  .levels-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .levels-list .levels-list-item::before {
+    width: 6px;
+    height: 6px;
+    top: 10px;
+    left: -13px;
+  }
+
+
+  .levels-image {
+    width: 331px;
+    height: 340px;
+    margin: 0 auto;
+  }
+
+  .levels-wraper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 41px;
+  }
+
+  .levels-text-wraper {
+    min-width: 638px;
+  }
+
+}
