@@ -1,0 +1,173 @@
+.terms-conditions-theme {
+  background-color: #7f8aff;
+}
+
+.terms-conditions-header {
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.terms-conditions-section {
+  padding-bottom: 25px;
+}
+
+.terms-conditions-title,
+.terms-conditions-subtitle-info {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.terms-conditions-text {
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.terms-conditions-list {
+  font-size: 16px;
+  counter-reset: list-counter;
+}
+
+.terms-conditions-list-item {
+  counter-increment: list-counter;
+  margin-bottom: 4px;
+}
+
+.terms-conditions-list-item::before {
+  content: counter(list-counter) ".";
+  margin-left: 6px;
+  margin-right: 2px;
+}
+
+.terms-conditions-subtitle {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.terms-conditions-text-item {
+  font-size: 12px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.terms-conditions-text-item span {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.terms-conditions-sublist {
+  margin-bottom: 4px;
+}
+
+.terms-conditions-sublist .terms-conditions-sublist-item::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  background-color: #fff;
+  vertical-align: middle;
+  left: -10px;
+  top: 7px;
+  border-radius: 0.3px;
+}
+
+.terms-conditions-sublist-item {
+  font-size: 12px;
+  line-height: 1.25;
+  margin-left: 10px;
+  position: relative;
+}
+
+.terms-conditions-sublist-link,
+.privacy-policy-page-link {
+  text-decoration: underline;
+}
+
+.terms-conditions-subtitle-info-text {
+  margin-bottom: 8px;
+}
+
+.terms-conditions-sublist-block {
+  margin-bottom: 8px;
+}
+
+.terms-conditions-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.terms-conditions-text-item.add-text-item {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+  .terms-conditions-header {
+    padding-top: 50px;
+    padding-bottom: 28px;
+  }
+
+  .terms-conditions-title {
+    font-size: 44px;
+  }
+
+  .terms-conditions-subtitle-info {
+    font-size: 28px;
+  }
+
+  .terms-conditions-text {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .terms-conditions-subtitle {
+    font-size: 32px;
+  }
+
+  .terms-conditions-list-item {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+
+  .terms-conditions-list-item::before {
+    margin-left: 11px;
+  }
+
+  .terms-conditions-text-item {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .terms-conditions-text-item span {
+    margin-bottom: 0;
+  }
+
+  .terms-conditions-sublist-item {
+    font-size: 20px;
+    margin-left: 110px;
+  }
+
+  .terms-conditions-sublist .terms-conditions-sublist-item::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    left: -12px;
+    top: 12px;
+    border-radius: 0.3px;
+  }
+
+  .terms-conditions-sublist-block {
+    margin-bottom: 20px;
+  }
+
+  .terms-conditions-section {
+    padding-bottom: 58px;
+  }
+
+  .terms-conditions-text-item.add-text-item {
+    display: inline-block;
+  }
+}
