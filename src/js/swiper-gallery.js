@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerGroup: 1,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 17,
   speed: 500,
 
