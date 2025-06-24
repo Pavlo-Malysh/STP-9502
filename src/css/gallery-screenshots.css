@@ -69,7 +69,6 @@ transition: transform 0.3s ease;
 }
 /* Основний контейнер пагінації */
 .swiper-pagination {
-/* position: relative; */
 display: flex;
 justify-content: center;
 align-items: center;
