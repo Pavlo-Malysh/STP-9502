@@ -1,0 +1,132 @@
+.game-info {
+  background-color: #979eff;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  margin-bottom: 4px;
+  height: 144px;
+}
+
+.game-info .container {
+  padding-left: 35px;
+}
+
+.game-info-title {
+  color: #979eff;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 22px;
+  text-shadow:
+    -2px -2px 0 #ffffff,
+    0 -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 0 0 #ffffff,
+    2px 0 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    0 2px 0 #ffffff,
+    2px 2px 0 #ffffff,
+    -1px -2px 0 #ffffff,
+    1px -2px 0 #ffffff,
+    -1px 2px 0 #ffffff,
+    1px 2px 0 #ffffff,
+    -2px -1px 0 #ffffff,
+    2px -1px 0 #ffffff,
+    -2px 1px 0 #ffffff,
+    2px 1px 0 #ffffff;
+}
+
+.game-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 22px;
+}
+
+.game-info-item {
+  position: relative;
+  width: calc((100% - 44px) / 3);
+
+  border-radius: 12px 40px 12px 12px;
+
+  height: 19px;
+  background-color: #636acb;
+}
+
+.game-info-subtitle {
+  position: absolute;
+  top: -10px;
+  left: -19px;
+  border-radius: 20px;
+  padding: 3px 2.5px;
+  width: 78px;
+  height: 16px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #555ab1;
+
+}
+
+.game-info-text {
+  font-size: 10px;
+  padding: 6px 7px 2px 6px;
+  min-width: 76px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .game-info {
+    padding-top: 20px;
+    padding-bottom: 69px;
+    margin-bottom: 12px;
+    height: 440px;
+  }
+
+  .game-info .container {
+    padding-left: 24px;
+  }
+
+  .game-info-title {
+    font-size: 48px;
+    margin-bottom: 82px;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: none;
+  }
+
+  .game-info-list {
+    gap: 49px 161px;
+  }
+
+  .game-info-item {
+    width: calc((100% - 322px) / 3);
+    width: 231px;
+    height: 80px;
+    padding: 33px 7px 27px 23px;
+  }
+
+  .game-info-item:nth-child(1) {
+    margin-left: 43px;
+  }
+
+  .game-info-item:nth-child(4) {
+    margin-left: 134px;
+  }
+
+  .game-info-subtitle {
+    top: -22px;
+    left: -39px;
+    padding: 4px 13px;
+    width: 189px;
+    height: 36px;
+
+    text-align: center;
+    font-size: 22px;
+
+  }
+
+  .game-info-text {
+    font-size: 16px;
+  }
+
+
+
+
+}

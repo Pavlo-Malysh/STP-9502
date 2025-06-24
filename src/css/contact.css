@@ -4,8 +4,6 @@
   background-color: #979eff;
 }
 
-.container {}
-
 .contact .container {
   padding-left: 0;
   padding-right: 0;
@@ -144,5 +142,16 @@
   .contact-email-icon {
     width: 24px;
     height: 20px;
+  }
+
+  .contact-link:hover,
+  .contact-link:active {
+    color: #fff;
+    background-color: #636acb;
+  }
+
+  .contact-link:hover .contact-email-icon,
+  .contact-link:active .contact-email-icon {
+    fill: #fff;
   }
 }
