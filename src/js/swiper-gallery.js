@@ -43,9 +43,17 @@ const swiper = new Swiper('.swiper', {
 
   on: {
     init() {
-      updateBulletClasses(this);
+      console.log('✅ Swiper ініціалізований');
+      setTimeout(() => {
+        updateBulletClasses(this);
+      }, 0);
     },
     slideChange() {
+      console.log('➡️ Слайд змінено');
+      // Нічого не робимо тут
+    },
+    transitionEnd() {
+      console.log('🎯 transitionEnd');
       updateBulletClasses(this);
     }
   }
@@ -53,17 +61,24 @@ const swiper = new Swiper('.swiper', {
 
 // Функція оновлення буллетів за відстанню до активного
 function updateBulletClasses(swiper) {
-  const bullets = swiper.pagination.bullets;
+  const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
   const realIndex = swiper.realIndex;
 
+  console.log('🔁 slideChange | realIndex:', realIndex);
+  console.log('📌 bullets:', bullets.length);
+
   bullets.forEach((bullet, index) => {
-    // Очистити старі класи
-    for (let i = 0; i <= bullets.length; i++) {
+      bullet.classList.remove('swiper-pagination-bullet-active');
+    // Прибираємо всі старі класи bullet-distance
+    for (let i = 0; i <= 5; i++) {
       bullet.classList.remove(`bullet-distance-${i}`);
     }
 
     const distance = Math.abs(index - realIndex);
-    const clamped = Math.min(distance, 5); // обмежити до 5
+    const clamped = Math.min(distance, 5); // максимум до 5
     bullet.classList.add(`bullet-distance-${clamped}`);
+
+    console.log(`🔸 Bullet ${index}: distance = ${distance}, class = bullet-distance-${clamped}`);
   });
 }
+
