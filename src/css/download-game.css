@@ -86,7 +86,7 @@
     padding-right: 24px;
     background-image: url('/img/download-now-desk.webp');
     background-size: contain;
-    background-position: right;
+    background-position: calc(100% - 24px) bottom;
     background-repeat: no-repeat;
     height: 600px;
   }
