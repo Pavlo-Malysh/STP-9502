@@ -20,7 +20,15 @@
 
 @media (min-resolution: 192dpi) and (max-width: 1199px) {
   .bg__level-img {
-    background-image: url(/img/mobile-bg-level@2x.webp);
+    background-image: url('/img/mobile-bg-level@2x.webp');
+  }
+
+  .bg__content {
+    background-image: url('/img/mobile-bg-level-content@2x.webp');
+  }
+
+  .bg__level-smile {
+    background-image: url('/img/bg-level-smile@2x.webp');
   }
 }
 
@@ -36,12 +44,6 @@
 }
 
 
-@media (min-resolution: 192dpi) and (max-width: 1199px) {
-  .bg__content {
-    background-image: url(/img/mobile-bg-level-content@2x.webp);
-  }
-}
-
 .bg__level-smile {
   background-image: url('/img/bg-level-smile.webp');
   background-size: contain;
@@ -49,12 +51,6 @@
   background-repeat: no-repeat;
   width: 164px;
   height: 136px;
-}
-
-@media (min-resolution: 192dpi) and (max-width: 1199px) {
-  .bg__level-smile {
-    background-image: url(/img/bg-level-smile@2x.webp);
-  }
 }
 
 
@@ -137,9 +133,13 @@
   }
 
 
-  @media (min-resolution: 192dpi) and (max-width: 1199px) {
+  @media (min-resolution: 192dpi) and (min-width: 1200px) {
     .level-section .container {
-      background-image: url(/img/bg-level@2x.webp);
+      background-image: url('/img/bg-level@2x.webp');
+    }
+
+    .level-section .container .bg__content {
+      background-image: url('/img/bg-level-content@2x.webp');
     }
   }
 
@@ -155,12 +155,6 @@
     position: absolute;
     bottom: 0;
     right: 24px;
-  }
-
-  @media (min-resolution: 192dpi) and (max-width: 1199px) {
-    .level-section .container .bg__content {
-      background-image: url(/img/bg-level-content@2x.webp);
-    }
   }
 
   .wrap__level-content {
