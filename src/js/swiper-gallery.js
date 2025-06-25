@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#idGallery .swiper', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
   loop: true,
@@ -17,8 +17,8 @@ const swiper = new Swiper('.swiper', {
   speed: 500,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#idGallery .swiper-button-next',
+    prevEl: '#idGallery .swiper-button-prev',
     disabledClass: 'swiper-button-disabled',
   },
 
@@ -33,7 +33,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '#idGallery .swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="${className}"></span>`;
@@ -68,7 +68,7 @@ function updateBulletClasses(swiper) {
   console.log('📌 bullets:', bullets.length);
 
   bullets.forEach((bullet, index) => {
-      bullet.classList.remove('swiper-pagination-bullet-active');
+    bullet.classList.remove('swiper-pagination-bullet-active');
     // Прибираємо всі старі класи bullet-distance
     for (let i = 0; i <= 5; i++) {
       bullet.classList.remove(`bullet-distance-${i}`);
@@ -81,4 +81,3 @@ function updateBulletClasses(swiper) {
     console.log(`🔸 Bullet ${index}: distance = ${distance}, class = bullet-distance-${clamped}`);
   });
 }
-
