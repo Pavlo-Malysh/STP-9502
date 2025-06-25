@@ -1,12 +1,11 @@
-// import Swiper JS
+
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// init Swiper:
 const swiper = new Swiper('#idGallery .swiper', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
@@ -43,17 +42,12 @@ const swiper = new Swiper('#idGallery .swiper', {
 
   on: {
     init() {
-      console.log('✅ Swiper ініціалізований');
       setTimeout(() => {
         updateBulletClasses(this);
       }, 0);
     },
-    slideChange() {
-      console.log('➡️ Слайд змінено');
-      // Нічого не робимо тут
-    },
+    slideChange() { },
     transitionEnd() {
-      console.log('🎯 transitionEnd');
       updateBulletClasses(this);
     }
   }
@@ -63,9 +57,6 @@ const swiper = new Swiper('#idGallery .swiper', {
 function updateBulletClasses(swiper) {
   const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
   const realIndex = swiper.realIndex;
-
-  console.log('🔁 slideChange | realIndex:', realIndex);
-  console.log('📌 bullets:', bullets.length);
 
   bullets.forEach((bullet, index) => {
     bullet.classList.remove('swiper-pagination-bullet-active');
@@ -78,6 +69,5 @@ function updateBulletClasses(swiper) {
     const clamped = Math.min(distance, 5); // максимум до 5
     bullet.classList.add(`bullet-distance-${clamped}`);
 
-    console.log(`🔸 Bullet ${index}: distance = ${distance}, class = bullet-distance-${clamped}`);
   });
 }
