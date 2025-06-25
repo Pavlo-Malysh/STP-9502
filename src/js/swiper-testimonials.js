@@ -46,21 +46,7 @@ const swiperReviews = new Swiper('#idReviews .swiper', {
     }
   }
 });
-// function updateBulletClassesReviews(swiperReviews) {
-//   const bullets = swiperReviews.pagination.el.querySelectorAll('.swiper-pagination-bullet');
-//   const bulletCount = bullets.length;
-//   const activeIndex = swiperReviews.realIndex % bulletCount;
 
-//   bullets.forEach((bullet, index) => {
-//     for (let i = 0; i <= 6; i++) {
-//       bullet.classList.remove(`bullet-distance-${i}`);
-//     }
-
-//     const distance = Math.abs(index - activeIndex);
-//     const clamped = Math.min(distance, 6);
-//     bullet.classList.add(`bullet-distance-${clamped}`);
-//   });
-// }
 
 function updateBulletClassesReviews(swiper) {
   const paginationEl = swiper.pagination?.el;
@@ -78,7 +64,7 @@ function updateBulletClassesReviews(swiper) {
     }
 
     const distance = Math.abs(index - activeIndex);
-    const clamped = Math.min(distance, 6);
+    const clamped = Math.min(distance, 7);
     bullet.classList.add(`bullet-distance-${clamped}`);
   });
 }
