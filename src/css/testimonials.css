@@ -42,7 +42,8 @@
 }
 
 .reviews-list-wrap-item {
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   height: 108px;
   position: relative;
   border-radius: 12px 40px 12px 12px;
@@ -72,10 +73,14 @@
 }
 
 .reviews-list-item.swiper-slide {
-  width: 288px;
+  width: 320px;
   height: 280px;
   padding-top: 24px;
   border-radius: 10px;
+}
+
+.reviews.swiper {
+  padding: 0;
 }
 
 .swiper-pagination {
@@ -187,7 +192,8 @@
   }
 
   .reviews-list-wrap-item {
-    width: 482px;
+    width: 100%;
+    max-width: 482px;
     height: 148px;
     position: relative;
     border-radius: 12px 40px 12px 12px;
