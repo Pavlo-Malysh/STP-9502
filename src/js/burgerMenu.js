@@ -15,21 +15,20 @@ refs.closeBtnEl.addEventListener('click', e => {
 
 refs.mobileMenuLinks.forEach(link => {
   link.addEventListener('click', e => {
-    e.preventDefault(); // Щоб вручну контролювати скрол
+    e.preventDefault();
 
-    const targetId = link.getAttribute('href').slice(1); // Без "#"
+    const targetId = link.getAttribute('href').slice(1);
     const targetEl = document.getElementById(targetId);
 
     if (!targetEl) return;
 
-    // Закрити мобільне меню
     refs.burgerMenuEl.dataset.visible = 'close';
     document.body.style.overflow = '';
 
-    // Трохи затримати скрол, поки меню зникає (анімація)
+
     setTimeout(() => {
       targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 250); // 300мс = час transition для opacity/visibility
+    }, 250);
   });
 });
 
