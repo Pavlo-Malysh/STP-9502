@@ -16,8 +16,8 @@ const swiper = new Swiper('#idGallery .swiper', {
   speed: 500,
 
   navigation: {
-    nextEl: '#idGallery .swiper-button-next',
-    prevEl: '#idGallery .swiper-button-prev',
+    nextEl: '#idGallery [data-btn-swiper-next]',
+    prevEl: '#idGallery [data-btn-swiper-prev]',
     disabledClass: 'swiper-button-disabled',
   },
 
@@ -32,7 +32,7 @@ const swiper = new Swiper('#idGallery .swiper', {
   },
 
   pagination: {
-    el: '#idGallery .swiper-pagination',
+    el: '#idGallery [data-pagination]',
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="${className}"></span>`;
@@ -55,7 +55,7 @@ const swiper = new Swiper('#idGallery .swiper', {
 
 // Функція оновлення буллетів за відстанню до активного
 function updateBulletClasses(swiper) {
-  const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
+  const bullets = document.querySelectorAll('[data-pagination] .swiper-pagination-bullet');
   const realIndex = swiper.realIndex;
 
   bullets.forEach((bullet, index) => {
