@@ -3,10 +3,12 @@ import { refs } from "./refs";
 
 refs.openBtnEl.addEventListener('click', e => {
   refs.burgerMenuEl.dataset.visible = 'open';
+  document.body.style.overflow = 'hidden';
 });
 
 refs.closeBtnEl.addEventListener('click', e => {
   refs.burgerMenuEl.dataset.visible = 'close';
+  document.body.style.overflow = '';
 });
 
 
@@ -22,11 +24,12 @@ refs.mobileMenuLinks.forEach(link => {
 
     // Закрити мобільне меню
     refs.burgerMenuEl.dataset.visible = 'close';
+    document.body.style.overflow = '';
 
     // Трохи затримати скрол, поки меню зникає (анімація)
     setTimeout(() => {
       targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 300); // 300мс = час transition для opacity/visibility
+    }, 250); // 300мс = час transition для opacity/visibility
   });
 });
 
