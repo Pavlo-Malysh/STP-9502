@@ -4,17 +4,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiperReviews = new Swiper('#idReviews .swiper', {
+const swiperReviews = new Swiper('#idReviews [data-swiper]', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   spaceBetween: 17,
   speed: 500,
 
   navigation: {
-    nextEl: '#idReviews .swiper-button-next',
-    prevEl: '#idReviews .swiper-button-prev',
+    nextEl: '#idReviews [data-btn-swiper-next]',
+    prevEl: '#idReviews [data-btn-swiper-prev]',
     disabledClass: 'swiper-button-disabled',
   },
 
@@ -27,7 +27,7 @@ const swiperReviews = new Swiper('#idReviews .swiper', {
   },
 
   pagination: {
-    el: '#idReviews .swiper-pagination',
+    el: '#idReviews [data-pagination]',
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="${className}"></span>`;
@@ -52,7 +52,7 @@ function updateBulletClassesReviews(swiper) {
   const paginationEl = swiper.pagination?.el;
   if (!paginationEl) return;
 
-  const bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
+  const bullets = paginationEl.querySelectorAll(' [data-pagination] .swiper-pagination-bullet');
   if (!bullets || bullets.length === 0) return;
 
   const bulletCount = bullets.length;
@@ -64,7 +64,7 @@ function updateBulletClassesReviews(swiper) {
     }
 
     const distance = Math.abs(index - activeIndex);
-    const clamped = Math.min(distance, 7);
+    const clamped = Math.min(distance, 5);
     bullet.classList.add(`bullet-distance-${clamped}`);
   });
 }

@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('#idGallery .swiper', {
+const swiper = new Swiper('#idGallery [data-swiper]', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
   loop: true,
@@ -14,11 +14,11 @@ const swiper = new Swiper('#idGallery .swiper', {
   slidesPerView: 1,
   spaceBetween: 17,
   speed: 500,
+  initialSlide: 1,
 
   navigation: {
     nextEl: '#idGallery [data-btn-swiper-next]',
     prevEl: '#idGallery [data-btn-swiper-prev]',
-    disabledClass: 'swiper-button-disabled',
   },
 
   breakpoints: {
@@ -53,20 +53,19 @@ const swiper = new Swiper('#idGallery .swiper', {
   }
 });
 
-// Функція оновлення буллетів за відстанню до активного
 function updateBulletClasses(swiper) {
   const bullets = document.querySelectorAll('[data-pagination] .swiper-pagination-bullet');
   const realIndex = swiper.realIndex;
 
   bullets.forEach((bullet, index) => {
     bullet.classList.remove('swiper-pagination-bullet-active');
-    // Прибираємо всі старі класи bullet-distance
+
     for (let i = 0; i <= 5; i++) {
       bullet.classList.remove(`bullet-distance-${i}`);
     }
 
     const distance = Math.abs(index - realIndex);
-    const clamped = Math.min(distance, 5); // максимум до 5
+    const clamped = Math.min(distance, 5);
     bullet.classList.add(`bullet-distance-${clamped}`);
 
   });
