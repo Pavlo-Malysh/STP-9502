@@ -62,6 +62,11 @@
     font-size: 24px;
   }
 
+  .footer-nav-link:hover,
+  .footer-nav-link:active {
+    color: #5120e3;
+  }
+
   .footer-nav-list::after {
     top: 55px;
 
