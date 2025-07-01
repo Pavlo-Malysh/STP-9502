@@ -5,6 +5,7 @@
 
 .why-play .container {
   padding: 0;
+  overflow-x: hidden;
 }
 
 .bg-img {
@@ -203,6 +204,10 @@ height: 600px;
   background: #aeb2ff;
   border: none;
   padding: 16px 0;
+
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .text__why-play {
@@ -243,6 +248,23 @@ height: 600px;
 }
 .list__why-play .item__why-play.purple {
   width: 60%;
+}
+
+.item__why-play[data-anim-left]:not([data-show]) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+
+.item__why-play[data-anim-right]:not([data-show]) {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+
+.item__why-play[data-show] {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 }
